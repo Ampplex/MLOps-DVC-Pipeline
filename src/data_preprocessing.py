@@ -4,10 +4,13 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from nltk.stem.porter import PorterStemmer
 from nltk.corpus import stopwords
+
 import string
 import nltk
+# Download required NLTK resources. Only 'punkt' is needed, not 'punkt_tab'.
 nltk.download('stopwords')
 nltk.download('punkt')
+nltk.download('punkt_tab')
 
 # Ensure the "logs" directory exists
 log_dir = 'logs'
